@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Animalec - Gestão de Patrocinadores</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+
+    <link href="css/animalec.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                <a href="#" class="navbar-brand ml-5">
+                    <img class="router-link-active" src="assets/animalec_line.png" title="Página principal do Animalec"
+                        style="width: 250px; height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto mr-5">
+                        <li class="nav-item"><a href="#" class="nav-link" target="_self">ANIMAIS</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link" target="_self">QUIZZES</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link" target="_self">CONTACTOS</a></li>
+                        <li class="nav-item"><a href="patrocinadores.html" class="nav-link" target="_self">PATROCINADORES</a></li>
+                        <li class="nav-item"><a href="especialistas.html" class="nav-link" target="_self">ESPECIALISTAS</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link" target="_self">ADMIN</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <section class="page-section">
+            <div class="container">
+              <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h2 class="page-section-heading mt-5">ADICIONAR PATROCINADOR</h2>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="divider-custom">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="col-2"></div>
+
+                    <div class="col">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input name="namePatrocinador" type="text" class="form-control form-control-lg"
+                                    id="txtName" placeholder="escreve nome do patrocinador" required />
+                            </div>
+
+                            <div class="form-group">
+                                <select id="sltAnimal" name="animal" class="form-control form-control-lg" required>
+                                    <option value="">-- SELECIONA ANIMAL --</option>
+                                    <option value="cao">CÃO</option>
+                                    <option value="gato">GATO</option>
+                                    <option value="cobra">COBRA</option>
+                                    <option value="lagarto">LAGARTO</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input name="endereco" type="text" class="form-control form-control-lg" id="txtEndereco"
+                                    placeholder="escreve a morada do patrocinador" required />
+                            </div>
+                            <div class="form-group">
+                                <input name="contacto" type="text" class="form-control form-control-lg" id="txtContacto"
+                                    placeholder="escreve o contacto do patrocinador" required />
+                            </div>
+                            <div class="form-group">
+                                <input name="fotografia" type="file" class="form-control form-control-lg" id="uplFoto"
+                                    placeholder="" required />
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-success btn-lg mr-2">
+                                <i class="fas fa-plus-square"></i> ADICIONAR
+                            </button>
+
+                            <a href="" class="btn btn-outline-danger btn-lg">
+                                <i class="fas fa-window-close"></i> CANCELAR
+                            </a>
+                        </form>
+                    </div>
+
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
