@@ -9844,3 +9844,12 @@ form .row:first-child .floating-label-form-group {
 .text-primary {
     color: #18BC9C !important; /* Verde do tema */
 }
+   @media (min-width: 992px) { /* lg - Desktop */
+            .column-toggle {
+                display: table-cell !important;
+            }
+        }
+        .actions-col {
+            padding-left: 15px;
+            padding-right: 15px;
+        }

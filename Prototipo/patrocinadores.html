@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Animalec - Gestão de Patrocinadores</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
     
     <link href="css/animalec.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -26,17 +27,17 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto mr-5">
-                        <li class="nav-item"><a href="#" class="nav-link" target="_self">ANIMAIS</a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link" target="_self">QUIZZES</a>
-                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link" target="_self">ANIMAIS</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" target="_self">QUIZZES</a></li>
                         <li class="nav-item"><a href="#" class="nav-link" target="_self">CONTACTOS</a></li>
                         <li class="nav-item"><a href="patrocinadores.html" class="nav-link" target="_self">PATROCINADORES</a></li>
                         <li class="nav-item"><a href="especialistas.html" class="nav-link" target="_self">ESPECIALISTAS</a></li>
                         <li class="nav-item"><a href="index.html" class="nav-link" target="_self">ADMIN</a></li>
-                    </ul> </div> </nav>
+                    </ul> 
+                </div> 
+            </nav>
         </div>
 
         <section class="page-section">
@@ -59,10 +60,10 @@
             </div>
 
             <div class="row justify-content-center mt-6">
-                <div class="col-12 col-md-12">
+                <div class="col-12 col-md-12 actions-col">
+
                     <div class="row mb-4">
-                        <div class="col-2"></div>
-                        <div class="col">
+                        <div class="col-12 col-lg-8 offset-lg-2 text-left">
                             <a href="addPatrocinadores.html" class="btn btn-outline-success mr-2 mt-2">
                                 <i class="fas fa-plus-square"></i> ADICIONAR PATROCINADOR
                             </a>
@@ -70,22 +71,18 @@
                                 <i class="fas fa-bars"></i> MENU PRINCIPAL
                             </a>
                         </div>
-                        <div class="col-2"></div>
                     </div>
-
+                    
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col">
-                            <table class="table table-striped">
+                        <div class="col-12 col-lg-8 offset-lg-2">
+                            <table class="table table-striped" id="tabelaPatrocinadores"> 
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th scope="col">
-                                            NOME
-                                        </th>
+                                        <th scope="col">NOME</th>
                                         <th scope="col">ANIMAL</th>
-                                        <th scope="col">ENDEREÇO</th>
-                                        <th scope="col">CONTACTO</th>
-                                        <th scope="col">FOTOGRAFIA</th>
+                                        <th scope="col" class="d-none d-lg-table-cell column-toggle">ENDEREÇO</th> 
+                                        <th scope="col" class="d-none d-lg-table-cell column-toggle">CONTACTO</th> 
+                                        <th scope="col" class="d-none d-lg-table-cell column-toggle">FOTOGRAFIA</th> 
                                         <th scope="col">AÇÕES</th>
                                     </tr>
                                 </thead>
@@ -93,14 +90,14 @@
                                     <tr>
                                         <td class="pt-4">XXXXX</td>
                                         <td class="pt-4">XXXXX</td>
-                                        <td class="pt-4">XXXXX</td>
-                                        <td class="pt-4">XXXXX</td>
-                                        <td class="pt-4"><img src="animalec.ico" width="50px"></td>
+                                        <td class="pt-4 d-none d-lg-table-cell column-toggle">XXXXX</td> 
+                                        <td class="pt-4 d-none d-lg-table-cell column-toggle">XXXXX</td> 
+                                        <td class="pt-4 d-none d-lg-table-cell column-toggle"><img src="animalec.ico" width="50px"></td> 
                                         <td>
                                             <a href="#" class="btn btn-outline-success mr-2 mt-2">
                                                 <i class="fas fa-edit"></i> EDITAR
                                             </a>
-                                            <button type="button" class="btn btn-outline-success mr-2 mt-2">
+                                            <button type="button" class="btn btn-outline-success mr-2 mt-2 ver-btn" data-toggle="show">
                                                 <i class="fas fa-search"></i> VER
                                             </button>
                                             <button type="button" class="btn btn-outline-danger mr-2 mt-2">
@@ -109,16 +106,16 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                          <td class="pt-4">XXXXX</td>
                                         <td class="pt-4">XXXXX</td>
                                         <td class="pt-4">XXXXX</td>
-                                        <td class="pt-4">XXXXX</td>
-                                         <td class="pt-4"><img src="animalec.ico" width="50px"></td>
+                                        <td class="pt-4 d-none d-lg-table-cell column-toggle">XXXXX</td> 
+                                        <td class="pt-4 d-none d-lg-table-cell column-toggle">XXXXX</td> 
+                                        <td class="pt-4 d-none d-lg-table-cell column-toggle"><img src="animalec.ico" width="50px"></td> 
                                         <td>
                                             <a href="" class="btn btn-outline-success mr-2 mt-2">
                                                 <i class="fas fa-edit"></i> EDITAR
                                             </a>
-                                            <button type="button" class="btn btn-outline-success mr-2 mt-2">
+                                            <button type="button" class="btn btn-outline-success mr-2 mt-2 ver-btn" data-toggle="show">
                                                 <i class="fas fa-search"></i> VER
                                             </button>
                                             <button type="button" class="btn btn-outline-danger mr-2 mt-2">
@@ -129,14 +126,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-2"></div>
                     </div>
-
 
                 </div>
             </div>
-
-    </div>
 
     </div>
     </section>
@@ -144,6 +137,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>
